@@ -1,0 +1,6 @@
+.header-link{
+    @apply block py-2 px-3 text-white rounded md:bg-transparent md:p-0 
+}
+.header-link:hover{
+    color: #C59D5F;
+}
