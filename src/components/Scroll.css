@@ -1,0 +1,36 @@
+.parallax {
+  overflow: hidden;
+  letter-spacing: -2px;
+  line-height: 1;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 20px; /* Adjust if needed */
+}
+
+.parallax .scroller {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 64px; /* Adjust this size to match your design */
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+
+.parallax span {
+  display: block;
+  margin-right: 30px;
+}
+
+/* Outline/stroke text */
+.stroke-text {
+  color: transparent;
+  -webkit-text-stroke: 1px #222; /* Dark outline */
+}
+
+/* Regular text for "Kudil Restaurant" */
+.regular-text {
+  color: #222; /* Regular solid color */
+  -webkit-text-stroke: 0; /* No outline */
+  font-weight: 400; /* Regular font weight */
+}

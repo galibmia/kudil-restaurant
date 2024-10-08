@@ -41,7 +41,7 @@ const Header = () => {
                         </li>
                         <li>
                             <Link to="/services" className="header-link">
-                                Events
+                                Our Chefs
                             </Link>
                         </li>
                         <li>

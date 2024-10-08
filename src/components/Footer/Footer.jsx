@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-base-200 text-base-content">
       <div className="footer justify-items-center w-[60%] mx-auto py-10 mt-16">
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center">
           <h1 className="text-3xl font-bold uppercase text-left underline">Kudil</h1>
         </div>
         <nav>

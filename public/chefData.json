@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Chef John Doe",
+    "years_of_experience": 10,
+    "number_of_recipes": 50,
+    "likes": 1200,
+    "picture": "https://iili.io/dpUSsG1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Chef Jane Smith",
+    "years_of_experience": 8,
+    "number_of_recipes": 30,
+    "likes": 900,
+    "picture": "https://iili.io/dpUS4jV.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Chef Emily Johnson",
+    "years_of_experience": 12,
+    "number_of_recipes": 70,
+    "likes": 1500,
+    "picture": "https://iili.io/dpUSL6F.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Chef Michael Brown",
+    "years_of_experience": 5,
+    "number_of_recipes": 25,
+    "likes": 600,
+    "picture": "https://iili.io/dpUS8Yb.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Chef Sarah Davis",
+    "years_of_experience": 15,
+    "number_of_recipes": 100,
+    "likes": 2000,
+    "picture": "https://iili.io/dpUSZ3g.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Chef David Wilson",
+    "years_of_experience": 7,
+    "number_of_recipes": 40,
+    "likes": 1100,
+    "picture": "https://iili.io/dpUStaa.jpg"
+  }
+]
