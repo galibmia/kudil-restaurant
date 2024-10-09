@@ -1,9 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import "./Header.css";
-import logo from "../../assets/images/light-logo.webp"
+import { Link, useLocation } from 'react-router-dom';
+import './Header.css';
+import logo from '../../assets/images/light-logo.webp';
 
 const Header = () => {
+    const location = useLocation();
+
+    const isActive = (path) => {
+        return location.pathname === path ? 'active-link' : '';
+    };
+
     return (
         <nav className="bg-black fixed w-full z-20 top-0 start-0 border-b border-gray-600">
             <div className="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-4">
@@ -11,7 +17,7 @@ const Header = () => {
                     <img src={logo} className="h-7" alt="KUDIL" />
                 </Link>
                 <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                    <Link to="/services" className="header-link ">
+                    <Link to="/services" className={`header-link ${isActive('/services')}`}>
                         Book A Table
                     </Link>
                     <button
@@ -22,35 +28,47 @@ const Header = () => {
                         aria-expanded="false"
                     >
                         <span className="sr-only">Open main menu</span>
-                        <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
+                        <svg
+                            className="w-5 h-5"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 17 14"
+                        >
+                            <path
+                                stroke="currentColor"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M1 1h15M1 7h15M1 13h15"
+                            />
                         </svg>
                     </button>
                 </div>
                 <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-                    <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border  rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                    <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                         <li>
-                            <Link to="/" className="header-link " aria-current="page">
+                            <Link to="/" className={`header-link ${isActive('/')}`} aria-current="page">
                                 Home
                             </Link>
                         </li>
                         <li>
-                            <Link to="/about" className="header-link">
+                            <Link to="/about" className={`header-link ${isActive('/about')}`}>
                                 About us
                             </Link>
                         </li>
                         <li>
-                            <Link to="/services" className="header-link">
+                            <Link to="/chefs" className={`header-link ${isActive('/chefs')}`}>
                                 Our Chefs
                             </Link>
                         </li>
                         <li>
-                            <Link to="/contact" className="header-link">
+                            <Link to="/contact" className={`header-link ${isActive('/contact')}`}>
                                 Reservation
                             </Link>
                         </li>
                         <li>
-                            <Link to="/contact" className="header-link">
+                            <Link to="/contact" className={`header-link ${isActive('/contact')}`}>
                                 Contact Us
                             </Link>
                         </li>

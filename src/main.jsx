@@ -8,6 +8,7 @@ import {
 import Main from './components/layouts/Main.jsx';
 import Home from "./pages/Home/Home.jsx";
 import 'animate.css';
+import OurChefs from './pages/OurChefs.jsx';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>
+      },
+      {
+        path: 'chefs',
+        element: <OurChefs></OurChefs>
       }
     ]
   },

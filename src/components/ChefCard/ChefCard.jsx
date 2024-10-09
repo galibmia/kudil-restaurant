@@ -39,12 +39,12 @@ const ChefCard = () => {
                 <h6 className="text-lg md:text-xl font-semibold text-[#757575]">
                   {chefData.number_of_recipes} Recipes
                 </h6>
-                <div className="md:flex gap-6 mb-8">
+                <div className="md:flex gap-6 mb-8 ">
                   <p className="flex items-center gap-2 text-[#757575] text-md font-semibold my-2">
                     <IoTime className="text-xl" />
                     {chefData.years_of_experience} Years of Experience
                   </p>
-                  <p className="flex items-center gap-2 text-[#757575] text-md font-semibold">
+                  <p className="flex items-center gap-2 text-[#757575] text-md font-semibold ">
                     <AiFillLike className="text-xl" /> Likes: {chefData.likes}
                   </p>
                 </div>

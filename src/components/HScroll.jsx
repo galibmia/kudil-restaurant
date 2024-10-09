@@ -60,7 +60,7 @@ ParallaxText.propTypes = {
 
 export default function HScroll() {
   return (
-    <section>
+    <section className="mt-24">
       {/* Kudil Restaurant with stroke */}
       <ParallaxText baseVelocity={-2} className="font-extrabold" textClass="regular-text">
       Kudil Restaurant • Best Restaurant in Town • Chinese Restaurant •
