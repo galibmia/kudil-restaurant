@@ -35,7 +35,7 @@ const menuItems = [
 
 const MenuCards = () => {
   return (
-    <div className="absolute w-full h-[900px] py-24  bg-[#f5f4f4] bg-opacity-90">
+    <div className="absolute w-full h-[800px] py-24  bg-[#f5f4f4] bg-opacity-90">
       <p className="text-red-700 text-center font-bold my-2">我们的菜单</p>
       <h1 className="text-4xl text-center font-bold mb-8">Savor the Diversity of Authentic Chinese Cuisine</h1>
       <Box className="flex justify-center gap-4 w-[75%] mx-auto">

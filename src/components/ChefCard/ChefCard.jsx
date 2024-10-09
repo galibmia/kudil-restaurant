@@ -19,7 +19,7 @@ const ChefCard = () => {
     return <h1>Loading</h1>;
   }
   return (
-    <div className="w-[65%] mx-auto">
+    <div className="2xl:w-[65%]  lg:w-[80%] md:w-[80%] mx-auto">
       <h1 className="text-center text-7xl fira-sans-extrabold text-black my-14 leading-normal">
         Meet Our{" "}
         <p className="text-7xl fira-sans-extrabold text-[#f43d22] uppercase inline-flex underline">
@@ -30,7 +30,7 @@ const ChefCard = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-14 mb-8 mx-8 md:mx-0">
         {chefsData.map((chefData) => (
           <Tilt key={chefData.id} className="Tilt" options={{ max: 10 }}>
-            <div className="card glass w-96">
+            <div className="card glass lg:w-80 xl:w-80 2xl:w-96">
               <figure>
                 <img src={chefData.picture} alt={chefData.name} />
               </figure>
