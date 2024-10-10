@@ -71,11 +71,6 @@ const Header = () => {
                         </li>
                         <li>
                             <Link to="/contact" className={`header-link ${isActive('/contact')}`}>
-                                Reservation
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/contact" className={`header-link ${isActive('/contact')}`}>
                                 Contact Us
                             </Link>
                         </li>

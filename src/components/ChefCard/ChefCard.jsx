@@ -3,6 +3,7 @@ import { IoTime } from "react-icons/io5";
 import { AiFillLike } from "react-icons/ai";
 import {Tilt} from "react-tilt";
 import { Link } from "react-router-dom";
+import Loading from "../Loading/Loading";
 
 const ChefCard = () => {
   const [chefsData, setChefsData] = useState(null);
@@ -16,7 +17,7 @@ const ChefCard = () => {
   }, []);
 
   if (chefsData === null) {
-    return <h1>Loading</h1>;
+    return <Loading></Loading>;
   }
   return (
     <div className="2xl:w-[65%]  lg:w-[80%] md:w-[80%] mx-auto">

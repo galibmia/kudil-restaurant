@@ -15,6 +15,8 @@ import AuthProvider from "./provider/AuthProvider.jsx";
 import Profile from "./pages/Profile/Profile.jsx";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute.jsx";
 import NotFound from "./pages/NotFound.jsx";
+import Contact from "./pages/Contact/Contact.jsx";
+import AboutUs from "./pages/AboutUs/AboutUs.jsx";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +55,14 @@ const router = createBrowserRouter([
       {
         path: "/profile",
         element: <PrivateRoute><Profile></Profile></PrivateRoute>
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>
+      },
+      {
+        path: "/about",
+        element: <AboutUs></AboutUs>
       }
     ],
   },
