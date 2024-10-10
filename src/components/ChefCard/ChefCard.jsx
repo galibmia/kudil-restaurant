@@ -49,9 +49,9 @@ const ChefCard = () => {
                   </p>
                 </div>
                 <div className=" w-full justify-center">
-                  <button className="btn w-full text-white bg-[#f43d22] hover:bg-[#ffd23e] hover:text-black hover:border-none">
+                  <Link to={`/menus/${chefData.id}`} className="btn w-full text-white bg-[#f43d22] hover:bg-[#ffd23e] hover:text-black hover:border-none">
                     View Recipes
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

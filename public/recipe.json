@@ -1,0 +1,632 @@
+[
+  {
+    "id": 1,
+    "chef_id": 1,
+    "recipe_name": "Pad Thai",
+    "ingredients": [
+      "rice noodles",
+      "shrimp",
+      "tofu",
+      "bean sprouts",
+      "peanuts",
+      "egg",
+      "tamarind paste",
+      "fish sauce",
+      "garlic",
+      "lime"
+    ],
+    "cooking_method": "Stir-fry the garlic, shrimp, and tofu. Add the noodles and tamarind sauce. Toss in bean sprouts, egg, and peanuts. Serve with lime.",
+    "rating": 4.8,
+    "image": "https://i.ibb.co/kH6Z96R/1.jpg"
+  },
+  {
+    "id": 2,
+    "chef_id": 1,
+    "recipe_name": "Green Curry",
+    "ingredients": [
+      "chicken",
+      "green curry paste",
+      "coconut milk",
+      "bamboo shoots",
+      "eggplant",
+      "basil leaves",
+      "fish sauce",
+      "palm sugar",
+      "lime leaves"
+    ],
+    "cooking_method": "Simmer green curry paste in coconut milk. Add chicken and cook until tender. Add vegetables and season with fish sauce and palm sugar. Garnish with basil leaves and lime leaves.",
+    "rating": 4.7,
+    "image": "https://i.ibb.co/5G0Lbfw/2.jpg"
+  },
+  {
+    "id": 3,
+    "chef_id": 1,
+    "recipe_name": "Tom Yum Goong",
+    "ingredients": [
+      "shrimp",
+      "lemongrass",
+      "galangal",
+      "kaffir lime leaves",
+      "mushrooms",
+      "chili paste",
+      "fish sauce",
+      "lime juice",
+      "coriander"
+    ],
+    "cooking_method": "Boil lemongrass, galangal, and lime leaves in water. Add shrimp and mushrooms. Season with chili paste, fish sauce, and lime juice.",
+    "rating": 4.6,
+    "image": "https://i.ibb.co/LC0pZmk/3.jpg"
+  },
+  {
+    "id": 4,
+    "chef_id": 2,
+    "recipe_name": "Massaman Curry",
+    "ingredients": [
+      "beef",
+      "massaman curry paste",
+      "coconut milk",
+      "potatoes",
+      "onions",
+      "peanuts",
+      "cinnamon sticks",
+      "cardamom",
+      "fish sauce",
+      "tamarind paste"
+    ],
+    "cooking_method": "Cook beef with massaman curry paste and coconut milk. Add potatoes and onions. Season with fish sauce and tamarind paste. Add peanuts, cinnamon sticks, and cardamom. Simmer until tender.",
+    "rating": 4.8,
+    "image": "https://i.ibb.co/8d7qbdc/4.jpg"
+  },
+  {
+    "id": 5,
+    "chef_id": 2,
+    "recipe_name": "Som Tum",
+    "ingredients": [
+      "green papaya",
+      "tomatoes",
+      "green beans",
+      "garlic",
+      "chilies",
+      "peanuts",
+      "fish sauce",
+      "lime juice",
+      "palm sugar",
+      "dried shrimp"
+    ],
+    "cooking_method": "Pound garlic and chilies in a mortar. Add green beans, tomatoes, and dried shrimp. Add shredded green papaya and mix with fish sauce, lime juice, and palm sugar. Garnish with peanuts.",
+    "rating": 4.5,
+    "image": "https://i.ibb.co/ZWWDwGV/5.jpg"
+  },
+  {
+    "id": 6,
+    "chef_id": 2,
+    "recipe_name": "Panang Curry",
+    "ingredients": [
+      "chicken",
+      "panang curry paste",
+      "coconut milk",
+      "peanuts",
+      "kaffir lime leaves",
+      "fish sauce",
+      "palm sugar",
+      "red chili"
+    ],
+    "cooking_method": "Simmer panang curry paste in coconut milk. Add chicken and cook until tender. Season with fish sauce and palm sugar. Garnish with kaffir lime leaves, peanuts, and red chili.",
+    "rating": 4.7,
+    "image": "https://i.ibb.co/mFR8HzL/6.jpg"
+  },
+  {
+    "id": 7,
+    "chef_id": 3,
+    "recipe_name": "Larb",
+    "ingredients": [
+      "minced meat",
+      "lime juice",
+      "fish sauce",
+      "mint leaves",
+      "chili flakes",
+      "onion",
+      "roasted rice powder",
+      "coriander"
+    ],
+    "cooking_method": "Mix minced meat with lime juice, fish sauce, chili flakes, and onion. Add mint leaves and roasted rice powder. Serve with lettuce.",
+    "rating": 4.5,
+    "image": "https://i.ibb.co/D54kNDF/7.jpg"
+  },
+  {
+    "id": 8,
+    "chef_id": 3,
+    "recipe_name": "Thai Basil Chicken",
+    "ingredients": [
+      "chicken",
+      "Thai basil",
+      "garlic",
+      "soy sauce",
+      "oyster sauce",
+      "sugar",
+      "chili",
+      "bell pepper",
+      "rice"
+    ],
+    "cooking_method": "Stir-fry garlic and chicken. Add bell pepper, soy sauce, oyster sauce, and sugar. Toss in Thai basil and chili. Serve over rice.",
+    "rating": 4.6,
+    "image": "https://i.ibb.co/QXMx0d3/8.jpg"
+  },
+  {
+    "id": 9,
+    "chef_id": 3,
+    "recipe_name": "Mango Sticky Rice",
+    "ingredients": [
+      "glutinous rice",
+      "mango",
+      "coconut milk",
+      "sugar",
+      "salt",
+      "sesame seeds",
+      "mung beans"
+    ],
+    "cooking_method": "Cook glutinous rice and mix with coconut milk, sugar, and salt. Serve with sliced mango and garnish with sesame seeds and mung beans.",
+    "rating": 4.9,
+    "image": "https://i.ibb.co/2Y8hrXC/9.jpg"
+  },
+  {
+    "id": 10,
+    "chef_id": 2,
+    "recipe_name": "Thai Green Salad",
+    "ingredients": [
+      "cucumber",
+      "carrot",
+      "lettuce",
+      "tomato",
+      "peanut dressing",
+      "lime",
+      "cilantro"
+    ],
+    "cooking_method": "Toss cucumber, carrot, lettuce, and tomato in a bowl. Drizzle with peanut dressing and lime juice. Garnish with cilantro.",
+    "rating": 4.3,
+    "image": "https://i.ibb.co/w74ZbKD/10.jpg"
+  },
+  {
+    "id": 11,
+    "chef_id": 3,
+    "recipe_name": "Tom Kha Gai",
+    "ingredients": [
+      "chicken",
+      "coconut milk",
+      "galangal",
+      "lemongrass",
+      "kaffir lime leaves",
+      "mushrooms",
+      "fish sauce",
+      "lime juice"
+    ],
+    "cooking_method": "Simmer coconut milk with galangal, lemongrass, and kaffir lime leaves. Add chicken and mushrooms. Season with fish sauce and lime juice.",
+    "rating": 4.7,
+    "image": "https://i.ibb.co/tqkJmHV/11.jpg"
+  },
+  {
+    "id": 12,
+    "chef_id": 3,
+    "recipe_name": "Red Curry",
+    "ingredients": [
+      "chicken",
+      "red curry paste",
+      "coconut milk",
+      "bell peppers",
+      "bamboo shoots",
+      "basil",
+      "fish sauce"
+    ],
+    "cooking_method": "Cook red curry paste in coconut milk. Add chicken, bell peppers, and bamboo shoots. Season with fish sauce and add basil before serving.",
+    "rating": 4.6,
+    "image": "https://i.ibb.co/0DCS0wf/12.jpg"
+  },
+  {
+    "id": 13,
+    "chef_id": 1,
+    "recipe_name": "Thai Fried Noodles",
+    "ingredients": [
+      "egg noodles",
+      "shrimp",
+      "bell peppers",
+      "carrots",
+      "soy sauce",
+      "bean sprouts",
+      "sesame oil"
+    ],
+    "cooking_method": "Stir-fry egg noodles with shrimp, bell peppers, and carrots. Add soy sauce and bean sprouts. Drizzle with sesame oil before serving.",
+    "rating": 4.4,
+    "image": "https://i.ibb.co/gv7NRdN/13.jpg"
+  },
+  {
+    "id": 14,
+    "chef_id": 1,
+    "recipe_name": "Baan Sook Beef",
+    "ingredients": [
+      "beef",
+      "vegetable oil",
+      "soy sauce",
+      "onions",
+      "garlic",
+      "green chili",
+      "broccoli"
+    ],
+    "cooking_method": "Stir-fry beef with onions and garlic. Add soy sauce and green chili. Toss in broccoli until cooked.",
+    "rating": 4.5,
+    "image": "https://i.ibb.co/Jx4D4PW/14.jpg"
+  },
+  {
+    "id": 15,
+    "chef_id": 2,
+    "recipe_name": "Steamed Fish with Lime",
+    "ingredients": [
+      "whole fish",
+      "lime",
+      "garlic",
+      "chili",
+      "fish sauce",
+      "cilantro"
+    ],
+    "cooking_method": "Steam fish with garlic, lime, and chili. Drizzle with fish sauce and garnish with cilantro before serving.",
+    "rating": 4.7,
+    "image": "https://i.ibb.co/BPXrHcb/15.jpg"
+  },
+  {
+    "id": 16,
+    "chef_id": 2,
+    "recipe_name": "Sticky Rice with Mango",
+    "ingredients": ["glutinous rice", "mango", "coconut milk", "sugar", "salt"],
+    "cooking_method": "Prepare sticky rice, mix with coconut milk, sugar, and salt. Serve with sliced mango.",
+    "rating": 4.8,
+    "image": "https://i.ibb.co/2Y8hrXC/9.jpg"
+  },
+  {
+    "id": 17,
+    "chef_id": 1,
+    "recipe_name": "Crispy Fried Spring Rolls",
+    "ingredients": [
+      "spring roll wrappers",
+      "cabbage",
+      "carrots",
+      "mushrooms",
+      "glass noodles",
+      "soy sauce",
+      "vegetable oil"
+    ],
+    "cooking_method": "Fill wrappers with mixture of cabbage, carrots, mushrooms, and glass noodles. Roll and fry until crispy.",
+    "rating": 4.7,
+    "image": "https://i.ibb.co/fd1g2XF/17.jpg"
+  },
+  {
+    "id": 18,
+    "chef_id": 3,
+    "recipe_name": "Thai Omelette",
+    "ingredients": [
+      "eggs",
+      "fish sauce",
+      "green onions",
+      "cilantro",
+      "vegetable oil"
+    ],
+    "cooking_method": "Beat eggs with fish sauce, add green onions and cilantro. Fry in vegetable oil until golden.",
+    "rating": 4.5,
+    "image": "https://i.ibb.co/d5LyMnC/18.jpg"
+  },
+  {
+    "id": 19,
+    "chef_id": 4,
+    "recipe_name": "Massaman Curry",
+    "ingredients": [
+      "beef",
+      "massaman curry paste",
+      "coconut milk",
+      "potatoes",
+      "onions",
+      "peanuts",
+      "cinnamon sticks",
+      "cardamom",
+      "fish sauce",
+      "tamarind paste"
+    ],
+    "cooking_method": "Cook beef with massaman curry paste and coconut milk. Add potatoes and onions. Season with fish sauce and tamarind paste. Add peanuts, cinnamon sticks, and cardamom. Simmer until tender.",
+    "rating": 4.8,
+    "image": "https://i.ibb.co/8d7qbdc/4.jpg"
+  },
+  {
+    "id": 20,
+    "chef_id": 4,
+    "recipe_name": "Som Tum",
+    "ingredients": [
+      "green papaya",
+      "tomatoes",
+      "green beans",
+      "garlic",
+      "chilies",
+      "peanuts",
+      "fish sauce",
+      "lime juice",
+      "palm sugar",
+      "dried shrimp"
+    ],
+    "cooking_method": "Pound garlic and chilies in a mortar. Add green beans, tomatoes, and dried shrimp. Add shredded green papaya and mix with fish sauce, lime juice, and palm sugar. Garnish with peanuts.",
+    "rating": 4.5,
+    "image": "https://i.ibb.co/ZWWDwGV/5.jpg"
+  },
+  {
+    "id": 21,
+    "chef_id": 4,
+    "recipe_name": "Panang Curry",
+    "ingredients": [
+      "chicken",
+      "panang curry paste",
+      "coconut milk",
+      "peanuts",
+      "kaffir lime leaves",
+      "fish sauce",
+      "palm sugar",
+      "red chili"
+    ],
+    "cooking_method": "Simmer panang curry paste in coconut milk. Add chicken and cook until tender. Season with fish sauce and palm sugar. Garnish with kaffir lime leaves, peanuts, and red chili.",
+    "rating": 4.7,
+    "image": "https://i.ibb.co/mFR8HzL/6.jpg"
+  },
+  {
+    "id": 22,
+    "chef_id": 4,
+    "recipe_name": "Steamed Fish with Lime",
+    "ingredients": [
+      "whole fish",
+      "lime",
+      "garlic",
+      "chili",
+      "fish sauce",
+      "cilantro"
+    ],
+    "cooking_method": "Steam fish with garlic, lime, and chili. Drizzle with fish sauce and garnish with cilantro before serving.",
+    "rating": 4.7,
+    "image": "https://i.ibb.co/BPXrHcb/15.jpg"
+  },
+  {
+    "id": 23,
+    "chef_id": 4,
+    "recipe_name": "Sticky Rice with Mango",
+    "ingredients": ["glutinous rice", "mango", "coconut milk", "sugar", "salt"],
+    "cooking_method": "Prepare sticky rice, mix with coconut milk, sugar, and salt. Serve with sliced mango.",
+    "rating": 4.8,
+    "image": "https://i.ibb.co/2Y8hrXC/9.jpg"
+  },
+  {
+    "id": 24,
+    "chef_id": 4,
+    "recipe_name": "Crispy Fried Spring Rolls",
+    "ingredients": [
+      "spring roll wrappers",
+      "cabbage",
+      "carrots",
+      "mushrooms",
+      "glass noodles",
+      "soy sauce",
+      "vegetable oil"
+    ],
+    "cooking_method": "Fill wrappers with mixture of cabbage, carrots, mushrooms, and glass noodles. Roll and fry until crispy.",
+    "rating": 4.7,
+    "image": "https://i.ibb.co/fd1g2XF/17.jpg"
+  },
+  {
+    "id": 25,
+    "chef_id": 5,
+    "recipe_name": "Mango Sticky Rice",
+    "ingredients": [
+      "glutinous rice",
+      "mango",
+      "coconut milk",
+      "sugar",
+      "salt",
+      "sesame seeds",
+      "mung beans"
+    ],
+    "cooking_method": "Cook glutinous rice and mix with coconut milk, sugar, and salt. Serve with sliced mango and garnish with sesame seeds and mung beans.",
+    "rating": 4.9,
+    "image": "https://i.ibb.co/2Y8hrXC/9.jpg"
+  },
+  {
+    "id": 26,
+    "chef_id": 5,
+    "recipe_name": "Thai Green Salad",
+    "ingredients": [
+      "cucumber",
+      "carrot",
+      "lettuce",
+      "tomato",
+      "peanut dressing",
+      "lime",
+      "cilantro"
+    ],
+    "cooking_method": "Toss cucumber, carrot, lettuce, and tomato in a bowl. Drizzle with peanut dressing and lime juice. Garnish with cilantro.",
+    "rating": 4.3,
+    "image": "https://i.ibb.co/w74ZbKD/10.jpg"
+  },
+  {
+    "id": 27,
+    "chef_id": 5,
+    "recipe_name": "Tom Kha Gai",
+    "ingredients": [
+      "chicken",
+      "coconut milk",
+      "galangal",
+      "lemongrass",
+      "kaffir lime leaves",
+      "mushrooms",
+      "fish sauce",
+      "lime juice"
+    ],
+    "cooking_method": "Simmer coconut milk with galangal, lemongrass, and kaffir lime leaves. Add chicken and mushrooms. Season with fish sauce and lime juice.",
+    "rating": 4.7,
+    "image": "https://i.ibb.co/tqkJmHV/11.jpg"
+  },
+  {
+    "id": 28,
+    "chef_id": 5,
+    "recipe_name": "Red Curry",
+    "ingredients": [
+      "chicken",
+      "red curry paste",
+      "coconut milk",
+      "bell peppers",
+      "bamboo shoots",
+      "basil",
+      "fish sauce"
+    ],
+    "cooking_method": "Cook red curry paste in coconut milk. Add chicken, bell peppers, and bamboo shoots. Season with fish sauce and add basil before serving.",
+    "rating": 4.6,
+    "image": "https://i.ibb.co/0DCS0wf/12.jpg"
+  },
+  {
+    "id": 29,
+    "chef_id": 5,
+    "recipe_name": "Thai Fried Noodles",
+    "ingredients": [
+      "egg noodles",
+      "shrimp",
+      "bell peppers",
+      "carrots",
+      "soy sauce",
+      "bean sprouts",
+      "sesame oil"
+    ],
+    "cooking_method": "Stir-fry egg noodles with shrimp, bell peppers, and carrots. Add soy sauce and bean sprouts. Drizzle with sesame oil before serving.",
+    "rating": 4.4,
+    "image": "https://i.ibb.co/gv7NRdN/13.jpg"
+  },
+  {
+    "id": 30,
+    "chef_id": 5,
+    "recipe_name": "Baan Sook Beef",
+    "ingredients": [
+      "beef",
+      "vegetable oil",
+      "soy sauce",
+      "onions",
+      "garlic",
+      "green chili",
+      "broccoli"
+    ],
+    "cooking_method": "Stir-fry beef with onions and garlic. Add soy sauce and green chili. Toss in broccoli until cooked.",
+    "rating": 4.5,
+    "image": "https://i.ibb.co/Jx4D4PW/14.jpg"
+  },
+  {
+    "id": 31,
+    "chef_id": 6,
+    "recipe_name": "Tom Yum Goong",
+    "ingredients": [
+      "shrimp",
+      "lemongrass",
+      "galangal",
+      "kaffir lime leaves",
+      "mushrooms",
+      "chili paste",
+      "fish sauce",
+      "lime juice",
+      "coriander"
+    ],
+    "cooking_method": "Boil lemongrass, galangal, and lime leaves in water. Add shrimp and mushrooms. Season with chili paste, fish sauce, and lime juice.",
+    "rating": 4.6,
+    "image": "https://i.ibb.co/LC0pZmk/3.jpg"
+  },
+  {
+    "id": 32,
+    "chef_id": 6,
+    "recipe_name": "Massaman Curry",
+    "ingredients": [
+      "beef",
+      "massaman curry paste",
+      "coconut milk",
+      "potatoes",
+      "onions",
+      "peanuts",
+      "cinnamon sticks",
+      "cardamom",
+      "fish sauce",
+      "tamarind paste"
+    ],
+    "cooking_method": "Cook beef with massaman curry paste and coconut milk. Add potatoes and onions. Season with fish sauce and tamarind paste. Add peanuts, cinnamon sticks, and cardamom. Simmer until tender.",
+    "rating": 4.8,
+    "image": "https://i.ibb.co/8d7qbdc/4.jpg"
+  },
+  {
+    "id": 33,
+    "chef_id": 6,
+    "recipe_name": "Som Tum",
+    "ingredients": [
+      "green papaya",
+      "tomatoes",
+      "green beans",
+      "garlic",
+      "chilies",
+      "peanuts",
+      "fish sauce",
+      "lime juice",
+      "palm sugar",
+      "dried shrimp"
+    ],
+    "cooking_method": "Pound garlic and chilies in a mortar. Add green beans, tomatoes, and dried shrimp. Add shredded green papaya and mix with fish sauce, lime juice, and palm sugar. Garnish with peanuts.",
+    "rating": 4.5,
+    "image": "https://i.ibb.co/ZWWDwGV/5.jpg"
+  },
+  {
+    "id": 34,
+    "chef_id": 6,
+    "recipe_name": "Panang Curry",
+    "ingredients": [
+      "chicken",
+      "panang curry paste",
+      "coconut milk",
+      "peanuts",
+      "kaffir lime leaves",
+      "fish sauce",
+      "palm sugar",
+      "red chili"
+    ],
+    "cooking_method": "Simmer panang curry paste in coconut milk. Add chicken and cook until tender. Season with fish sauce and palm sugar. Garnish with kaffir lime leaves, peanuts, and red chili.",
+    "rating": 4.7,
+    "image": "https://i.ibb.co/mFR8HzL/6.jpg"
+  },
+  {
+    "id": 35,
+    "chef_id": 6,
+    "recipe_name": "Larb",
+    "ingredients": [
+      "minced meat",
+      "lime juice",
+      "fish sauce",
+      "mint leaves",
+      "chili flakes",
+      "onion",
+      "roasted rice powder",
+      "coriander"
+    ],
+    "cooking_method": "Mix minced meat with lime juice, fish sauce, chili flakes, and onion. Add mint leaves and roasted rice powder. Serve with lettuce.",
+    "rating": 4.5,
+    "image": "https://i.ibb.co/D54kNDF/7.jpg"
+  },
+  {
+    "id": 36,
+    "chef_id": 6,
+    "recipe_name": "Thai Basil Chicken",
+    "ingredients": [
+      "chicken",
+      "Thai basil",
+      "garlic",
+      "soy sauce",
+      "oyster sauce",
+      "sugar",
+      "chili",
+      "bell pepper",
+      "rice"
+    ],
+    "cooking_method": "Stir-fry garlic and chicken. Add bell pepper, soy sauce, oyster sauce, and sugar. Toss in Thai basil and chili. Serve over rice.",
+    "rating": 4.6,
+    "image": "https://i.ibb.co/QXMx0d3/8.jpg"
+  }
+]

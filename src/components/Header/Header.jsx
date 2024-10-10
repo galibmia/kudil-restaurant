@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 import logo from '../../assets/images/light-logo.webp';
+import { AuthContext } from '../../provider/AuthProvider';
 
 const Header = () => {
     const location = useLocation();
+
+    const { user, loading } = useContext(AuthContext); 
 
     const isActive = (path) => {
         return location.pathname === path ? 'active-link' : '';
@@ -17,9 +20,13 @@ const Header = () => {
                     <img src={logo} className="h-7" alt="KUDIL" />
                 </Link>
                 <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                    <Link to="/services" className={`header-link ${isActive('/services')}`}>
-                        Book A Table
+                    {
+                        user ? <Link to="/profile" className={`header-link ${isActive('/services')}`}>
+                        {user.displayName}
+                    </Link> : <Link to="/login" className={`header-link ${isActive('/services')}`}>
+                        Login
                     </Link>
+                    }
                     <button
                         data-collapse-toggle="navbar-sticky"
                         type="button"

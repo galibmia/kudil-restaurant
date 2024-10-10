@@ -1,5 +1,6 @@
 import React from "react";
 import bgImg from "../../assets/images/banner-bg.webp";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -30,9 +31,9 @@ const Banner = () => {
             <button className="border border-white text-black font-semibold bg-white px-14 py-4 hover:bg-transparent hover:text-white me-8">
               Reservation
             </button>
-            <button className="border border-white hover:text-black font-semibold hover:bg-white px-14 py-4 bg-transparent text-white ">
-              View Menu
-            </button>
+            <Link to={"/chefs"} className="border border-white hover:text-black font-semibold hover:bg-white px-14 py-4 bg-transparent text-white ">
+              View Chefs
+            </Link>
           </div>
         </div>
       </div>
