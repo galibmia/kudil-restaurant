@@ -13,11 +13,14 @@ import Register from "./pages/Register/Register.jsx";
 import TermsCondition from "./pages/TermsCondition/TermsCondition.jsx";
 import AuthProvider from "./provider/AuthProvider.jsx";
 import Profile from "./pages/Profile/Profile.jsx";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute.jsx";
+import NotFound from "./pages/NotFound.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
+    errorElement: <NotFound></NotFound>,
     children: [
       {
         path: "/",
@@ -33,7 +36,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/recipes/:id",
-        element: <Recipe></Recipe>,
+        element: <PrivateRoute><Recipe></Recipe></PrivateRoute>,
       },
       {
         path: "/login",
@@ -49,7 +52,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/profile",
-        element: <Profile></Profile>
+        element: <PrivateRoute><Profile></Profile></PrivateRoute>
       }
     ],
   },

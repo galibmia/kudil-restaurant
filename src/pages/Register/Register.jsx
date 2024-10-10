@@ -1,41 +1,91 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaGithub } from 'react-icons/fa6';
 import { FcGoogle } from 'react-icons/fc';
+import { AuthContext } from '../../provider/AuthProvider';
+import Swal from 'sweetalert2';
+
+const img_hosting_token = import.meta.env.VITE_Img_Hosting_Token;
 
 const Register = () => {
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
+  const { createUser, updateUser, loginWithGoogle } = useContext(AuthContext);
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const form = e.target;
-        const name = form.name.value;
-        const email = form.email.value;
-        const password = form.password.value;
-        const confirmPassword = form.confirmPassword.value;
+  const img_hosting_url = `https://api.imgbb.com/1/upload?key=${img_hosting_token}`;
 
-        if (password.length < 6) {
-            console.log("Password must be 6 or more");
-            return;
-        }
-        else if (password !== confirmPassword) {
-            console.log("Password didn't match");
-            return;
-        }
+  const handleRegister = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const password = form.password.value;
+    const confirmPassword = form.confirmPassword.value;
+    const profilePhoto = form.profilePhoto.files[0];
 
+    setError('');
+
+    if (password.length < 6) {
+      setError("Password must be at least 6 characters long");
+      return;
     }
 
-    const handleLoginWithGoogle = () => {
-        
+    if (password !== confirmPassword) {
+      setError("Passwords do not match");
+      return;
     }
 
+    try {
+      // Upload profile photo to ImgBB
+      const formData = new FormData();
+      formData.append('image', profilePhoto);
+
+      const res = await fetch(img_hosting_url, {
+        method: 'POST',
+        body: formData,
+      });
+      const imgData = await res.json();
+
+      if (imgData.success) {
+        // Create user in Firebase
+        const userCredential = await createUser(email, password);
+        const photoURL = imgData.data.display_url;
+
+        // Update user profile with name and photo
+        await updateUser(name, photoURL);
+
+        // Navigate to the profile or home page
+        Swal.fire({
+          title: "Success",
+          text: "Your account created successfully.",
+          icon: "success"
+        });
+        navigate('/');
+      } else {
+        setError('Image upload failed');
+      }
+    } catch (error) {
+      setError(error.message);
+    }
+  };
+
+  const handleLoginWithGoogle = async () => {
+    try {
+      await loginWithGoogle();
+      navigate('/profile'); // Navigate to profile or home after Google login
+    } catch (error) {
+      setError(error.message);
+    }
+  };
 
   return (
     <div className="my-24">
       <form
         className="w-full md:w-1/3 mx-auto mt-16 border border-gray-300 rounded-sm p-4 md:px-14 md:py-14"
-        onSubmit={handleSubmit}
+        onSubmit={handleRegister}
       >
         <h1 className="montserrat-bold">Create an account</h1>
+        {error && <p className="text-red-500">{error}</p>}
         <div className="my-5">
           <input
             type="text"
@@ -73,6 +123,16 @@ const Register = () => {
             name="confirmPassword"
             className="border-b border-gray-500 text-gray-900 text-lg focus:outline-none focus:border-blue-700 placeholder:text-gray-900 block w-4/5  md:w-full py-2.5 montserrat-regular"
             placeholder="Confirm Password"
+            required
+          />
+        </div>
+        <div className="my-5">
+          <input
+            type="file"
+            id="profilePhoto"
+            name="profilePhoto"
+            className="border-b border-gray-500 text-gray-900 text-lg focus:outline-none focus:border-blue-700 placeholder:text-gray-900 block w-4/5  md:w-full py-2.5 montserrat-regular"
+            placeholder="Select Your Profile Picture"
             required
           />
         </div>
@@ -115,12 +175,6 @@ const Register = () => {
           <span className="montserrat-regular">Or </span>
           <hr className="border border-gray-400 w-52" />
         </p>
-        <button className="w-4/5 mx-auto mt-6 p-2 border border-gray-400 hover:border-gray-700 rounded-3xl flex items-center gap-24">
-          <FaGithub className="text-black text-5xl"></FaGithub>{" "}
-          <span className="montserrat-regular text-gray-950 hover:text-gray-900">
-            Continue with Github
-          </span>
-        </button>
         <button
           onClick={handleLoginWithGoogle}
           className="w-4/5 mx-auto mt-6 p-2 border border-gray-400 hover:border-gray-700 rounded-3xl flex items-center gap-24"

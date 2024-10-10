@@ -7,7 +7,7 @@ import { AuthContext } from '../../provider/AuthProvider';
 const Header = () => {
     const location = useLocation();
 
-    const { user, loading } = useContext(AuthContext); 
+    const { user, logOut } = useContext(AuthContext); 
 
     const isActive = (path) => {
         return location.pathname === path ? 'active-link' : '';
@@ -21,9 +21,9 @@ const Header = () => {
                 </Link>
                 <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                     {
-                        user ? <Link to="/profile" className={`header-link ${isActive('/services')}`}>
+                        user ? <><Link to="/profile" className={`header-link ${isActive('/services')} me-4`}>
                         {user.displayName}
-                    </Link> : <Link to="/login" className={`header-link ${isActive('/services')}`}>
+                    </Link> <button className='text-white header-link' onClick={logOut}>Logout</button></> : <Link to="/login" className={`header-link ${isActive('/services')}`}>
                         Login
                     </Link>
                     }

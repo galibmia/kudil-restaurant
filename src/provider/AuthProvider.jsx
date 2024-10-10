@@ -68,7 +68,7 @@ import {
     };
   
     // Login with Google
-    const loginWithGoogle = () => {
+    const loginWithGoogle = async () => {
       setLoading(true);
       return signInWithPopup(auth, googleAuth)
         .finally(() => setLoading(false));
@@ -94,7 +94,7 @@ import {
   
     return (
       <AuthContext.Provider value={authInfo}>
-        {loading ? <div>Loading...</div> : children}
+        {loading ? <div className='min-h-screen flex justify-items-center justify-center items-center '><span className="loading loading-ring  w-[100px]"></span></div> : children}
       </AuthContext.Provider>
     );
   };
